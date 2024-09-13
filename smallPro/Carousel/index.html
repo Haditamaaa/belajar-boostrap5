@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <style>
+      /* Your existing styles */
+      #title {
+        background-color: bisque;
+      }
+      #contents-1 {
+        background-color: burlywood;
+      }
+      #contents-2 {
+        background-color: cadetblue;
+      }
+      #contents-3 {
+        background-color: chartreuse;
+      }
+      #contents-4 {
+        background-color: coral;
+      }
+      #contents-5 {
+        background-color: cornflowerblue;
+      }
+      #contents-6 {
+        background-color: cornsilk;
+      }
+      #article-1 {
+        background-color: cyan;
+      }
+      #article-1-image {
+        background-color: darkgoldenrod;
+      }
+      #article-2 {
+        background-color: darkkhaki;
+      }
+      #article-2-image {
+        background-color: darkslateblue;
+      }
+
+      @media screen and (max-width: 1400px) {
+        #carousel-right {
+          display: none;
+        }
+        #carousel {
+          padding: 2em 1em;
+        }
+        #carousel-left-caption {
+          padding: 0 1em;
+        }
+        #carousel-left-button {
+          margin: 1em 0;
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        #carousel-left-button {
+          margin: 1em 0;
+          width: 20%;
+        }
+        #carousel {
+          margin: 2em 0;
+        }
+      }
+    </style>
+
+    <title>Small Medium</title>
+  </head>
+  <body>
+    <section id="navbar" style="background-color: #fbe192">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fbe192">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="/Medium.png" alt="" width="60" height="30" class="d-inline-block align-text-top" />
+            Small
+          </a>
+          <ul class="nav justify-content-end navbar-nav collapse navbar-collapse" id="navbarTogglerDemo03">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Our Story</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Membership</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Write</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign In</a></li>
+            <li class="nav-item"><button class="btn btn-secondary" type="submit" style="border-radius: 24px">Get Started</button></li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+
+      <!-- Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First carousel item -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3"><strong>Where good ideas find you</strong></h1>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat, itaque ut architecto expedita ducimus in modi atque deleniti eos quisquam? Eveniet ab porro dolor ipsa molestiae, voluptatem enim assumenda?
+                      <a href="#">Learn More</a>
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Get Started</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="/kevin-oetiker-v17IhTzLICs-unsplash.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second carousel item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3"><strong>Discover new horizons</strong></h1>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Explore more and get inspired by the latest trends and ideas from around the world.
+                      <a href="#">Explore Now</a>
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Explore</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="/nikolai-lehmann-05cDX4y2oJ8-unsplash.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third carousel item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3"><strong>Inspire and be inspired</strong></h1>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Join a community of thinkers and doers. Share your story and learn from others.
+                      <a href="#">Join Us</a>
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Join Now</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="/nikolai-lehmann-NLedc_m5QMk-unsplash.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Your other sections here -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 2: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
