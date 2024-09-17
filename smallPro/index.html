@@ -10,22 +10,29 @@
 
     <style>
       #contents-1 {
-        background-color: burlywood;
+        border: gray 1px solid;
+        margin: 1em 0;
+        padding: 1em;
       }
       #contents-2 {
         background-color: cadetblue;
+        margin: 1em 0;
       }
       #contents-3 {
         background-color: chartreuse;
+        margin: 1em 0;
       }
       #contents-4 {
         background-color: coral;
+        margin: 1em 0;
       }
       #contents-5 {
         background-color: cornflowerblue;
+        margin: 1em 0;
       }
       #contents-6 {
         background-color: cornsilk;
+        margin: 1em 0;
       }
       #article-1 {
         background-color: cyan;
@@ -38,6 +45,19 @@
       }
       #article-2-image {
         background-color: darkslateblue;
+      }
+      #contents {
+        padding: 2em;
+      }
+      #contents-1-number {
+        color: gray;
+        opacity: 0.25;
+      }
+      #contents-1-content {
+        padding-top: 0.5em;
+      }
+      #contents-1-content-title {
+        font-size: 1.2em;
       }
       /* layout mobile */
       @media screen and (max-width: 1400px) {
@@ -82,8 +102,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="/Medium.png" alt="" width="60" height="30" class="d-inline-block align-text-top" />
-            Small
+            <img src="/M.PNG" alt="" width="60" height="30" class="d-inline-block align-text-top" />
+            <strong>Small Medium</strong>
           </a>
           <ul class="nav justify-content-end navbar-nav collapse navbar-collapse" id="navbarTogglerDemo03">
             <li class="nav-item">
@@ -162,15 +182,23 @@
     <section id="trending">
       <div class="container">
         <div id="title" class="row">
-          <h3><img src="/Medium.png" alt="" width="60" height="30" class="d-inline-block align-text-top" /> Trending on Small</h3>
+          <h3><img src="/M.PNG" alt="" width="60" height="30" class="d-inline-block align-text-top" /> Trending on Small</h3>
         </div>
         <div id="contents" class="row">
           <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-1-number" class="col">01</div>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>01</strong></h3>
+              </div>
               <div id="contents-1-content" class="col">
-                <div id="contents-1-content-author" class="row">img | name</div>
-                <div id="contents-1-content-title" class="row">Title</div>
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
                 <div id="contents-1-content-time-and-date" class="row">
                   time and date | 30 min Read
                   <nav>icon</nav>
