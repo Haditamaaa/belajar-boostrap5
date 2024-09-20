@@ -7,47 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
     <style>
-      #contents-1 {
-        border: gray 1px solid;
-        margin: 1em 0;
-        padding: 1em;
-      }
-      #contents-2 {
-        background-color: cadetblue;
-        margin: 1em 0;
-      }
-      #contents-3 {
-        background-color: chartreuse;
-        margin: 1em 0;
-      }
-      #contents-4 {
-        background-color: coral;
-        margin: 1em 0;
-      }
-      #contents-5 {
-        background-color: cornflowerblue;
-        margin: 1em 0;
-      }
-      #contents-6 {
-        background-color: cornsilk;
-        margin: 1em 0;
-      }
-      #article-1 {
-        background-color: cyan;
-      }
-      #article-1-image {
-        background-color: darkgoldenrod;
-      }
-      #article-2 {
-        background-color: darkkhaki;
-      }
-      #article-2-image {
-        background-color: darkslateblue;
+      .btn {
+        border-radius: 24px;
       }
       #contents {
         padding: 2em;
+      }
+      #contents-1 {
+        padding: 1em;
       }
       #contents-1-number {
         color: gray;
@@ -58,6 +29,19 @@
       }
       #contents-1-content-title {
         font-size: 1.2em;
+      }
+      #article {
+        background-color: #faf9fa;
+        padding: 1em 2em;
+      }
+      #discover-and-footer {
+        padding: 1em 2em;
+      }
+      #discover-and-footer-topic-badge-1 {
+        margin: 0.5em 0px;
+      }
+      #discover-and-footer-title-subscription {
+        margin-top: 0.5em;
       }
       /* layout mobile */
       @media screen and (max-width: 1400px) {
@@ -160,23 +144,17 @@
           <div class="carousel-item">
             <img src="/nikolai-lehmann-NLedc_m5QMk-unsplash.jpg" class="d-block w-100" alt="..." />
           </div> -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320"><path fill="#fff" fill-opacity="1" d="M0,256L1440,128L1440,320L0,320Z"></path></svg>
     </section>
 
     <section id="trending">
@@ -197,76 +175,116 @@
                   </strong>
                 </div>
                 <div id="contents-1-content-title" class="row">
-                  <p><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
                 </div>
                 <div id="contents-1-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+                  <p>
+                    July 30 | 30 min read <a href="#"><i class="bi bi-star-fill"></i></a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="contents-2" class="col-md-4">
+          <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-2-number" class="col">02</div>
-              <div id="contents-2-content" class="col">
-                <div id="contents-2-content-author" class="row">img | name</div>
-                <div id="contents-2-content-title" class="row">Title</div>
-                <div id="contents-2-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>02</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>July 30 | 30 min read</p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="contents-3" class="col-md-4">
+          <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-3-number" class="col">03</div>
-              <div id="contents-3-content" class="col">
-                <div id="contents-3-content-author" class="row">img | name</div>
-                <div id="contents-3-content-title" class="row">Title</div>
-                <div id="contents-3-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>03</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>
+                    July 30 | 30 min read <a href="#"><i class="bi bi-star-fill"></i></a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="contents-4" class="col-md-4">
+          <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-4-number" class="col">04</div>
-              <div id="contents-4-content" class="col">
-                <div id="contents-4-content-author" class="row">img | name</div>
-                <div id="contents-4-content-title" class="row">Title</div>
-                <div id="contents-4-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>04</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>July 30 | 30 min read</p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="contents-5" class="col-md-4">
+          <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-5-number" class="col">05</div>
-              <div id="contents-5-content" class="col">
-                <div id="contents-5-content-author" class="row">img | name</div>
-                <div id="contents-5-content-title" class="row">Title</div>
-                <div id="contents-5-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>05</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>
+                    July 30 | 30 min read <a href="#"><i class="bi bi-star-fill"></i></a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="contents-6" class="col-md-4">
+          <div id="contents-1" class="col-md-4">
             <div class="row">
-              <div id="contents-6-number" class="col">06</div>
-              <div id="contents-6-content" class="col">
-                <div id="contents-6-content-author" class="row">img | name</div>
-                <div id="contents-6-content-title" class="row">Title</div>
-                <div id="contents-6-content-time-and-date" class="row">
-                  time and date | 30 min Read
-                  <nav>icon</nav>
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>06</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="/logo.PNG" width="30" height="30" alt="" /> Tama in Skillvul</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>lookin for hmm hmmm hmmmmm</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>July 30 | 30 min read</p>
                 </div>
               </div>
             </div>
@@ -274,82 +292,190 @@
         </div>
       </div>
     </section>
-    <hr />
+    <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
 
     <section id="multi-section">
       <div class="container">
         <div class="row">
-          <div id="article" class="col-8">
-            <div id="article-1" class="row">
-              <div id="article-1-content" class="col-8">
-                <div id="article-1-content-author" class="row">icon | Author</div>
-                <div id="article-1-content-title" class="row">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est at sit perspiciatis quas beatae quidem sed exercitationem dolorem ad magni error et soluta aperiam ullam autem, nostrum minima pariatur voluptatum?
+          <div id="article" class="col-md-8">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="/M.PNG" alt="" width="60" height="30" class="d-inline-block align-text-top" style="margin-right: 0.5em" />Tama in Skillvul</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong>apalah apalah apalah</strong>
+                    </p>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatum dicta, ullam quaerat autem a aliquid et quia iure, magni odit cupiditate consequuntur explicabo aut saepe id reprehenderit? Rem, cumque.
+                    </p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">July 30 | 15 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div id="article-1-content-caption" class="row">Caption</div>
-                <div id="article-1-content-footer" class="row">
-                  <div id="article-1-content-footer-date-and-time" class="col">Date and Time</div>
-                  <div id="article-1-content-footer-bookmark" class="col">Icon</div>
+                <div class="col-md-4">
+                  <img src="/nikolai-lehmann-NLedc_m5QMk-unsplash.jpg" class="img-fluid rounded-start" alt="..." />
                 </div>
-              </div>
-              <div id="article-1-image" class="col">
-                <img src="#" alt="" />
               </div>
             </div>
-            <div id="article-2" class="row">
-              <div id="article-2-content" class="col-8">
-                <div id="article-2-content-author" class="row">icon | Author</div>
-                <div id="article-2-content-title" class="row">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est at sit perspiciatis quas beatae quidem sed exercitationem dolorem ad magni error et soluta aperiam ullam autem, nostrum minima pariatur voluptatum?
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="/M.PNG" alt="" width="60" height="30" class="d-inline-block align-text-top" style="margin-right: 0.5em" />Tama in Skillvul</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong>apalah apalah apalah</strong>
+                    </p>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatum dicta, ullam quaerat autem a aliquid et quia iure, magni odit cupiditate consequuntur explicabo aut saepe id reprehenderit? Rem, cumque.
+                    </p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">July 30 | 15 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div id="article-2-content-caption" class="row">Caption</div>
-                <div id="article-2-content-footer" class="row">
-                  <div id="article-2-content-footer-date-and-time" class="col">Date and Time</div>
-                  <div id="article-2-content-footer-bookmark" class="col">Icon</div>
+                <div class="col-md-4">
+                  <img src="/nikolai-lehmann-05cDX4y2oJ8-unsplash.jpg" class="img-fluid rounded-start" alt="..." />
                 </div>
-              </div>
-              <div id="article-2-image" class="col">
-                <img src="#" alt="" />
               </div>
             </div>
           </div>
-          <div id="discover-and-footer" class="col">
-            <div id="discover-and-footer-title" class="row"><b>Discover more of what matters to you</b></div>
-            <div id="discover-and-footer-topic-badge" class="row">
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-2">Topic</div>
-              <div class="col-md-4">
+          <div id="discover-and-footer" class="col-md-4">
+            <div id="discover-and-footer-title" class="row">
+              <h5>Discover more of what matters to you</h5>
+            </div>
+            <div id="discover-and-footer-topic-badge" class="row align-items-center">
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Topic
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span> -->
+                </button>
+              </div>
+              <div class="col-6">
                 <a href="#">See all Topics</a>
               </div>
               <div id="discover-and-footer-title-subscription" class="row">
-                <b>Subscribe for more</b>
+                <h5>Subscribe for more</h5>
                 <p>Get notified when we publish something new!</p>
               </div>
               <div id="discover-and-footer-form" class="row">
                 <div class="col">
+                  <form class="row g-3">
+                    <div class="col-auto">
+                      <label for="inputPassword2" class="visually-hidden">Password</label>
+                      <input type="text" class="form-control" id="inputPassword2" placeholder="tama@gmail.com" />
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-warning" style="border-radius: 0">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- <div class="col">
                   <input type="text" />
                 </div>
                 <div class="col">
                   <button>Submit</button>
-                </div>
+                </div> -->
               </div>
             </div>
-            <hr />
-            <div id="footer" class="row">
-              <div id="footer-help" class="col-2">Help</div>
-              <div id="footer-status" class="col-2">Status</div>
-              <div id="footer-writers" class="col-2">Writers</div>
-              <div id="footer-blog" class="col-2">Blog</div>
-              <div id="footer-privacy" class="col-2">Privacy</div>
-              <div id="footer-term" class="col-2">Term</div>
-              <div id="footer-about" class="col-2">About</div>
-              <div class="row">
-                <p>Created with love by Araa</p>
+            <hr style="height: 3px; opacity: 0.5" />
+            <div id="footer" class="row align-items-center">
+              <div id="footer-help" class="col-2">
+                <small>
+                  <strong>Help</strong>
+                </small>
+              </div>
+              <div id="footer-status" class="col-2">
+                <small>
+                  <strong>Status</strong>
+                </small>
+              </div>
+              <div id="footer-writers" class="col-2">
+                <small>
+                  <strong>Writers</strong>
+                </small>
+              </div>
+              <div id="footer-blog" class="col-2">
+                <small>
+                  <strong>Blog</strong>
+                </small>
+              </div>
+              <div id="footer-privacy" class="col-2">
+                <small>
+                  <strong>Privacy</strong>
+                </small>
+              </div>
+              <div id="footer-term" class="col-2">
+                <small>
+                  <strong>Term</strong>
+                </small>
+              </div>
+              <div id="footer-about" class="col-2">
+                <small>
+                  <strong>About</strong>
+                </small>
+              </div>
+              <div class="row" style="margin-top: 1em">
+                <p>Created with <i class="bi bi-cc-circle"></i> by Dumb</p>
               </div>
             </div>
           </div>
